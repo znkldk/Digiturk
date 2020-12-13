@@ -5,8 +5,6 @@ import com.baris.reportTools.Rapor;
 import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.BeforeScenario;
 import com.thoughtworks.gauge.ExecutionContext;
-import org.apache.log4j.BasicConfigurator;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,7 +15,6 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 
@@ -54,8 +51,7 @@ public class hook {
     @AfterScenario
     public void afterSenario(ExecutionContext exexutionContext) throws IOException, GeneralSecurityException {
         GoogleExel googleExel=new GoogleExel();
-        String errorMessage;
-        String time;
+
         if(exexutionContext.getCurrentScenario().getIsFailing()){
 
             rapor.setResult("Fail");

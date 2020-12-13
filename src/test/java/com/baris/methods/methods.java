@@ -1,14 +1,10 @@
 package com.baris.methods;
-import com.baris.Pages.SatinAl;
 import com.baris.hook.hook;
-import com.baris.reportTools.Rapor;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 public class methods extends hook{
     Logger logger = Logger.getLogger(methods.class);
 
@@ -28,6 +24,7 @@ public class methods extends hook{
 
         return element;
     }
+
     public void waitForSec(int sure) {
 
         try {
@@ -37,6 +34,7 @@ public class methods extends hook{
         }
         logger.info(sure+" saniye beklendi");
     }
+
     public void compareTwoStringFailIfEquals(String str1,String str2,String message){
         if (str1.equals(str2)){
             rapor.setErrorMessage(message);

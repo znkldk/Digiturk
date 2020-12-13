@@ -17,7 +17,7 @@ public class Fragman extends methods {
     public void checkİfPlayerWorking(){
         Actions action = new Actions(driver);
         WebElement videoPlayer=findElementByby(player);
-
+        //ilk ve 2. video playerdan okunan süreler
         String firstReadedTime;
         String secontReadedTime;
 
@@ -28,8 +28,9 @@ public class Fragman extends methods {
         action.moveToElement(videoPlayer).build().perform();
 
         secontReadedTime=findElementByby(sure).getText();
-        System.out.println(firstReadedTime+" "+secontReadedTime);
 
+        //Fragmanın oynadıgını anlamamız için okunan sürelerim birbirinden Farklı olması gerekir
+        logger.info("ilk okunan süre: "+firstReadedTime+" ikinci okunan süre: "+secontReadedTime);
         compareTwoStringFailIfEquals(firstReadedTime,secontReadedTime,"Fragman Oynamamaktadır!!!");
         logger.info("Fragmanın Oynadıgını Kontrol Edildi");
     }

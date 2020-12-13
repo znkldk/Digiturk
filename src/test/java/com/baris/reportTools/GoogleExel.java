@@ -54,25 +54,8 @@ public class GoogleExel extends hook {
                 JacksonFactory.getDefaultInstance(),credential).setApplicationName(APPLICATION_NAME).build();
     }
 
-    public static void main(String[] args) throws IOException,GeneralSecurityException {
-
-        sheetsService = getSheetsService();
-
-        ValueRange appendBody =new ValueRange()
-                .setValues(Arrays.asList(
-                        Arrays.asList("re","was","added","By","Code" )
-                ));
-
-        AppendValuesResponse appendResult2 =   sheetsService.spreadsheets().values()
-                .append(SPREADSHEET_ID,"Sayfa1",appendBody)
-                .setValueInputOption("USER_ENTERED")
-                .setInsertDataOption("INSERT_ROWS")
-                .setIncludeValuesInResponse(true)
-                .execute();
-    }
-
     public void doReport() throws IOException,GeneralSecurityException {
-
+        //Bu kısımda okunan Rapor Google Sheetse yazılmaktadır
         sheetsService = getSheetsService();
         rapor.getErrorMessage();
         ValueRange appendBody =new ValueRange()
@@ -82,7 +65,7 @@ public class GoogleExel extends hook {
                                 rapor.getDate(),
                                 rapor.getErrorMessage(),
                                 rapor.getResult())));
-        System.out.println("ee yazıyo bu");
+
         AppendValuesResponse appendResult2 =   sheetsService.spreadsheets().values()
                 .append(SPREADSHEET_ID,"Sayfa1",appendBody)
                 .setValueInputOption("USER_ENTERED")

@@ -20,6 +20,7 @@ Olumlu Senaryo
 * Web Cap Tablet Butonuna Tıkla
 * Kullanıcı Bilgilerini Doldur
 
+//raporu kontrol etmek için bu senaryoyu çalıştırabilirsiniz.
 
 Fail Alacak Olan Senaryo
 ---------------------------

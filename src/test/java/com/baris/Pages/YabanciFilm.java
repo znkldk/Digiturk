@@ -27,11 +27,16 @@ public class YabanciFilm extends methods {
         logger.info("Yabancı Filmler Sayfasındaki Elementler Kontrol Edildi");
     }
 
-    @Step("Yapım Yılına Göre Sirala Butonuna Tıkla")
-    public void sortbyyear(){
+    @Step("Sirala Butonuna Tıkla")
+    public void clickSiralaBtn(){
         findElementByby(sirala).click();
+        logger.info("Sirala Butonuna Tıklandı");
+    }
+
+    @Step("Yapım Yılına Butonuna Tıkla")
+    public void clickYapımYılınaGoreBtn(){
         findElementByby(yapımYilinaGöre).click();
-        logger.info("Yapım Yılına Göre Butonuna Tıklandı");
+        logger.info("Yapım Yılına Butonuna Tıklandı");
     }
     @Step("Patron Gibi Filme Tıkla")
     public void selecktPatronGibi(){

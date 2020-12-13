@@ -1,6 +1,7 @@
 package com.baris.reportTools;
 
 public class Rapor {
+    //rapor için gereken degişkenler farklı classlardan alınmaktadır burada ki degişkenleri set ederek saglıklı bir rapor tutulabiliyor
     private static String currentScenarioName;
     private static String date;
     private static String errorMessage="-";
