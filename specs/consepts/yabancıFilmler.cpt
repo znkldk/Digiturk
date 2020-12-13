@@ -4,8 +4,10 @@ This is a concept file with following syntax for each concept.
 # Yabancı Filmler Sayfası Kontrollerini Gerçekleştir
 * Yabancı Filmler Sayfası Elementlerini Kontrol et
 
-# Filmlerin Tumunu Aç ve Yapım Yılına Göre Sırala
+# Filmlerin Tumunu Aç
 * Yabancı Filmler Sayfasından Tumu Butonuna Tıkla
+
+# Yapım Yılına Göre Sırala
 * Sirala Butonuna Tıkla
 * Yapım Yılına Butonuna Tıkla
 

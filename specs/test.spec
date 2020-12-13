@@ -11,7 +11,8 @@ To execute this specification, run
 Olumlu Senaryo
 ---------------------------
 * Yabancı Dizi Safasına Git
-* Filmlerin Tumunu Aç ve Yapım Yılına Göre Sırala
+* Filmlerin Tumunu Aç
+* Yapım Yılına Göre Sırala
 * Açılan Listeden Patron Gibi Filmini Aç
 * Fragmanı Oynat
 * Fragman Sayfasından Filmler Sayfasına Tekrar Geri Gel
